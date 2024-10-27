@@ -1,0 +1,244 @@
+body {
+    background-color: #F6E96B;
+    font-family: 'Arvo', Arial, Helvetica, sans-serif;
+}
+
+header {
+    font-size: 28px;
+    margin-top: 10px;
+    /* color: #0D92F4; */
+    color: #640D5F;
+    font-weight: 800;
+    /* position: fixed; */
+}
+
+.welcome {
+    display: none;
+}
+
+.container, header {
+    border: 3px solid #F96167;
+    margin: 5px auto;
+    width: 80%;
+    padding: 30px 0px;
+    border-radius: 5px;
+}
+
+.colour-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 200px;
+    align-items: center;
+    justify-items: center;
+}
+
+.colour-box {
+    border: 2px solid black;
+    margin: 10px;
+    width: 95%;
+    height: 85px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.font-box, .text-box {
+    margin: 10px;
+    padding: 20px 10px;
+    /* border: 1px solid red; */
+    width: 45%;
+    display: inline-block;
+    justify-items:baseline;
+    /* color: #605678; */
+    color: #640D5F;
+    /* align-items: center; */
+    /* background-color: #FFEB55; */
+}
+
+.sub-header {
+    /* color: #0D92F4; */
+    color: #640D5F;
+    font-size: 24px;
+    font-weight: 800;
+    /* padding-bottom: 5px; */
+}
+
+p {
+    text-align: center;
+    width: 70%;
+    padding: 3px 0px;
+    line-height: 1.2em;
+    /* color: blue; */
+}
+
+.font-name {
+    font-size: 24px;
+    /* color: #605678; */
+    font-weight: 700;
+}
+
+.text-box {
+    line-height: 1.3em;
+}
+
+.p-text, .sub-header {
+    text-align: left;
+    padding-left: 8px;
+}
+
+.style-1 {
+    font-family: 'Kablammo', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.style-2 {
+    font-family: 'Noto Sans';
+    font-size: 24px;
+}
+
+.style-3 {
+    font-family: 'Ovo';
+    font-size: 24px;
+}
+
+.style-4 {
+    font-family: 'tiny5';
+
+}
+
+.col-1 {
+    background-color: #006BFF;
+    color: whitesmoke;
+}
+
+.col-2 {
+    background-color: #B1D690;
+    color: black;
+}
+
+.col-3 {
+    background-color: #FF8A8A;
+    color: black;
+    
+}
+
+.col-4 {
+    background-color: #E85C0D;
+    color: rgb(255, 227, 227);
+    
+}
+
+.col-5 {
+    background-color: #6439FF;
+    color: whitesmoke;
+    
+}
+
+.col-6 {
+    background-color: #387F39;
+    color: whitesmoke;
+    
+}
+
+ul {
+    padding: 10px 0px;
+}
+
+.h1-info {
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.h2-info {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.p-info {
+    font-family: 'Agdasima', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.colour-box:hover {
+    transform: translate(3px, -3px);
+    box-shadow: 3px 3px #000;
+    /* border: 2px solid #D8D8D8; */
+}
+
+/* .font-box:hover {
+    background-color: #605678;
+    color: #fff;
+    box-shadow: black;
+}
+
+.text-box:hover {
+    background-color: #605678;
+    color: #fff;
+    box-shadow: black;
+} */
+
+.style-1:hover {
+    background-color: #182747;
+    color: #D8D8D8;
+    transform: rotate(5deg);
+}
+
+.style-2:hover {
+    background-color: #605678;
+    color: #9EC8B9;
+    transform: rotate(-2deg);
+}
+
+.style-3:hover {
+    background-color: #FF8A8A;
+    color: #181C14;
+    transform: scale(1.1);
+}
+
+.style-4:hover {
+    background-color: #A1D6B2;
+    color: #1A3636;
+    transform: rotate(2deg);
+}
+
+.h1-box:hover {
+    background-color: #FF6500;
+    color: #fff;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px #fff;
+}
+
+.h2-box:hover {
+    background-color: #610C9F;
+    /* color: #BED754; */
+    color: #F6E96B;
+    animation: shake 2s;
+    animation-iteration-count: infinite;
+}
+
+.p-box:hover {
+    background-color: #4E9F3D;
+    color: #1c2a18;
+    border: 3px solid #1c2a18;
+    border-radius: 5px;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
